@@ -1,4 +1,9 @@
-# Reproducible Research: Peer Assessment 1
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
 
 
 ## Loading and preprocessing the data
@@ -29,7 +34,7 @@ The following block of code takes the number of steps for each interval and adds
   hist(sumDataSet$steps, breaks = 53, xlab = "steps / day", ylab = "frequency (count)", main = "Steps / Day", col = "green")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png) 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
 
 
 ## 2. Calculate & report the mean and median total number of steps taken per day
@@ -83,7 +88,7 @@ This next block of code calculates the average (mean) number of steps taken for 
   plot(meanInterval$interval, meanInterval$steps, type="l", ylab="Average Number of Steps", xlab= "5 minute interval")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
+![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png) 
 
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -146,7 +151,7 @@ The total number of missing values is:
   hist(sumFilledDataSet$steps, breaks = 53, xlab = "steps taken per day", ylab = "frequency (count)", main = "Steps Per Day", col = "green")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-14-1.png) 
+![plot of chunk unnamed-chunk-14](figure/unnamed-chunk-14-1.png) 
 
 4B. Calculate & report the mean and median total number of steps taken per day
 
@@ -224,4 +229,4 @@ The impact of imputing missing data is that the values for the median and the me
   plot(meanWeekdayInterval$interval, meanWeekdayInterval$steps, type="l", ylab="Steps", xlab= "Interval", main = "Weekday", bg = "white", ylim = c(0, 200))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-20-1.png) 
+![plot of chunk unnamed-chunk-20](figure/unnamed-chunk-20-1.png) 
