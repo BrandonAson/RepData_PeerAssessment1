@@ -81,7 +81,7 @@ This next block of code calculates the average (mean) number of steps taken for 
 ```{r}
   ### plot the average (mean) number of steps taken per interval ###
   meanInterval <- aggregate(. ~ interval, dataSet, FUN = mean, na.rm = TRUE)
-  plot(meanInterval$interval, meanInterval$steps, type="l", ylab="Average Number of Steps Taken", xlab= "5 minute interval", main = "Daily Activity Pattern", bg = "white")
+  plot(meanInterval$interval, meanInterval$steps, type="l", ylab="Average Number of Steps", xlab= "5 minute interval")
 ```
 
 
